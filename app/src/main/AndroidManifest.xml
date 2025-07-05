@@ -1,0 +1,73 @@
+<manifest
+	xmlns:android="http://schemas.android.com/apk/res/android"
+	package="com.jdx.jdxsutility">
+	<uses-permission android:name="android.permission.BLUETOOTH" />
+	<uses-permission android:name="android.permission.BLUETOOTH_ADMIN" />
+	<uses-permission android:name="android.permission.BLUETOOTH_ADVERTISE" />
+	<uses-permission android:name="android.permission.BLUETOOTH_CONNECT" />
+	<uses-permission android:name="android.permission.BLUETOOTH_MAP" />
+	<uses-permission android:name="android.permission.BLUETOOTH_PRIVILEGED" />
+	<uses-permission android:name="android.permission.BLUETOOTH_SCAN" />
+	<uses-permission android:name="android.permission.MANAGE_DEVICE_POLICY_WIFI" />
+	<uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+	<uses-permission android:name="android.permission.CHANGE_WIFI_STATE" />
+	<uses-permission android:name="android.permission.COMPANION_APPROVE_WIFI_CONNECTIONS" />
+	<uses-permission android:name="android.permission.CHANGE_WIFI_MULTICAST_STATE" />
+	<uses-permission android:name="android.permission.CONFIGURE_WIFI_DISPLAY" />
+	<uses-permission android:name="android.permission.MANAGE_WIFI_COUNTRY_CODE" />
+	<uses-permission android:name="android.permission.MANAGE_WIFI_INTERFACES" />
+	<uses-permission android:name="android.permission.MANAGE_WIFI_NETWORK_SELECTION" />
+	<uses-permission android:name="android.permission.OVERRIDE_WIFI_CONFIG" />
+	<uses-permission android:name="android.permission.NEARBY_WIFI_DEVICES" />
+	<uses-permission android:name="android.permission.READ_WIFI_CREDENTIAL" />
+	<uses-permission android:name="android.permission.RECEIVE_WIFI_CREDENTIAL_CHANGE" />
+	<uses-permission android:name="android.permission.RESTART_WIFI_SUBSYSTEM" />
+	<uses-permission android:name="android.permission.WIFI_ACCESS_COEX_UNSAFE_CHANNELS" />
+	<uses-permission android:name="android.permission.WIFI_SET_DEVICE_MOBILITY_STATE" />
+	<uses-permission android:name="android.permission.WIFI_UPDATE_COEX_UNSAFE_CHANNELS" />
+	<uses-permission android:name="android.permission.WIFI_UPDATE_USABILITY_STATS_SCORE" />
+	<uses-permission android:name="android.permission.ACCESS_BACKGROUND_LOCATION" />
+	<uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+	<uses-permission android:name="android.permission.ACCESS_LOCATION_EXTRA_COMMANDS" />
+	<uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+	<uses-permission android:name="android.permission.ACCESS_MEDIA_LOCATION" />
+	<uses-permission android:name="android.permission.ACCESS_MOCK_LOCATION" />
+	<uses-permission android:name="android.permission.ALLOCATE_AGGRESSIVE" />
+	<uses-permission android:name="android.permission.CONTROL_LOCATION_UPDATES" />
+	<uses-permission android:name="android.permission.FOREGROUND_SERVICE_LOCATION" />
+	<uses-permission android:name="android.permission.INSTALL_LOCATION_PROVIDER" />
+	<uses-permission android:name="android.permission.INSTALL_LOCATION_TIME_ZONE_PROVIDER_SERVICE" />
+	<uses-permission android:name="android.permission.LOCAL_MAC_ADDRESS" />
+	<uses-permission android:name="android.permission.LOCATION_BYPASS" />
+	<uses-permission android:name="android.permission.LOCATION_HARDWARE" />
+	<uses-permission android:name="android.permission.MANAGE_DEVICE_POLICY_LOCALE" />
+	<uses-permission android:name="android.permission.INTERNET" />
+	<application
+android:hasFragileUserData="true"
+		android:allowBackup="true"
+		android:icon="@mipmap/ic_launcher"
+android:label="OFFICIAL JDX UTIL"
+		android:requestLegacyExternalStorage="true"
+		android:usesCleartextTraffic="true"
+		android:theme="@style/AppTheme">
+		<activity
+android:label="JDX UTILITYS"
+			android:name=".MainActivity"
+			android:configChanges="orientation|screenSize|keyboardHidden|smallestScreenSize|screenLayout"
+			android:hardwareAccelerated="true"
+			android:supportsPictureInPicture="true"
+			android:screenOrientation="portrait">
+			<intent-filter>
+				<action android:name="android.intent.action.MAIN" />
+				<category android:name="android.intent.category.LAUNCHER" />
+			</intent-filter>
+		</activity>
+		<activity
+			android:name=".DebugActivity"
+			android:screenOrientation="portrait"
+			android:theme="@style/AppTheme.DebugActivity" />
+		<uses-library
+			android:name="org.apache.http.legacy"
+			android:required="false" />
+	</application>
+</manifest>
